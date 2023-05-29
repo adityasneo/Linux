@@ -6,3 +6,6 @@ mkdir - create folder
 ls - list the content
 Cat - look the content
 echo - prints the content
+mv - move the content
+cp - copy
+rm - remove
