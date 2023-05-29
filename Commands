@@ -1,0 +1,8 @@
+Pwd - Present working directory
+whoami - Get the active username
+chmod - Command to change file permissions
+chown - Command for granting ownership of files or folders
+mkdir - create folder
+ls - list the content
+Cat - look the content
+echo - prints the content
