@@ -22,3 +22,10 @@ sudo useradd
 Use----> Tab for auto completion
 history
 !f ----> goes to previous command
+ctrl r for reverse searching
+Piplining :taking First Output to use second command
+Redirection:ls > lsfiles
+cat lsfiles
+ whoami > lsfiles
+cat lsfiles
+ls >> lsfiles ---> Append means add
