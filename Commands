@@ -19,4 +19,6 @@ free -m
   202  cat /etc/hosts
   203  findmnt
 sudo useradd
-Use----> Tab for auto completion 
+Use----> Tab for auto completion
+history
+!f ----> goes to previous command
