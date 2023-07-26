@@ -38,3 +38,12 @@ locate useradd
 updatedb
 locate useradd
 find / -name "hosts"
+find / -type f -size +100M
+find / -type f -size +100M 2> /dev/null --> to ignore error
+find / var -type f -size +100M
+find / user linuxteam
+find /etc -exec grep -l linuxteam {}  \; 2> /dev/null
+grep -l linuxteam /etc/* 2>/dev/null
+
+Mounting 
+Tar
