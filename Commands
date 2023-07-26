@@ -14,10 +14,10 @@ rm - remove
 194  ip addr show
 195  free
 free -m
-  200  df
-  201  df -h
-  202  cat /etc/hosts
-  203  findmnt
+   df
+ df -h
+  cat /etc/hosts
+ findmnt
 sudo useradd
 Use----> Tab for auto completion
 history
@@ -31,3 +31,5 @@ cat lsfiles
 ls >> lsfiles ---> Append means add
 Env Variables ---> env
  alias
+grep -R linuxteam /etc
+grep -R linuxteam /etc 2> /dev/null
