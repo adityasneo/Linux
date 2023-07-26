@@ -5,8 +5,18 @@ chmod - Command to change file permissions
 chown - Command for granting ownership of files or folders
 mkdir - create folder
 ls - list the content
+ls -l Content
 Cat - look the content
 echo - prints the content
 mv - move the content
 cp - copy
 rm - remove
+194  ip addr show
+195  free
+free -m
+  200  df
+  201  df -h
+  202  cat /etc/hosts
+  203  findmnt
+sudo useradd
+Use----> Tab for auto completion 
