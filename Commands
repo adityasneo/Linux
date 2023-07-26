@@ -1,5 +1,6 @@
 Pwd - Present working directory
 whoami - Get the active username
+sudo su -  ---> switch to root user
 chmod - Command to change file permissions
 chown - Command for granting ownership of files or folders
 mkdir - create folder
