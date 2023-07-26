@@ -1,1 +1,11 @@
-
+ ls
+  274  ls -l
+  275  ls -la  ----> hidden files
+  276  man ls
+mkdir
+  281  mkdir --help
+  282  ls -lrt
+mkdir -p /backstage/rp
+cd ..
+cd ../../../
+cd ~ ---> tilt symbol to go to home
