@@ -46,3 +46,14 @@ cat /etc/os-release
    18  cd log
    19  ls
    20  less messages
+
+man pages -- > user information
+man  man
+man ls
+  253  man man
+  254  man reboot
+  255  man -k user
+  256  man -k user | grep user
+  257  man apropos
+  258  man db
+  259  mandb
