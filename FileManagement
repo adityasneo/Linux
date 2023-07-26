@@ -9,3 +9,10 @@ mkdir -p /backstage/rp
 cd ..
 cd ../../../
 cd ~ ---> tilt symbol to go to home
+cp
+cp --help
+  297  clear
+  298  touch ad{0..10}
+  299  ls
+  300  cp ad* adi/
+cp sub/sub1 ---> copy directory
