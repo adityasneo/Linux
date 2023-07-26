@@ -16,3 +16,25 @@ cp --help
   299  ls
   300  cp ad* adi/
 cp -r sub/sub1 . ---> copy directory
+mv ttt* sub1/  ---> move
+ls -lrt
+mv sub1/ newsub ---> rename
+rmdir --> remove empty directory
+rm -rf --> force remove
+which ---> binary $Path
+locate -->updatedb -- db
+find -->
+which userad
+  307  which useradd
+  308  echo $PATH
+  309  vi hello
+  310  chmod +x hello
+  311  hello
+  312  ./hello
+  313  which hello
+  314  clear
+  315  history
+locate useradd
+updatedb
+locate useradd
+find / -name "hosts"
