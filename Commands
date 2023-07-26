@@ -29,3 +29,5 @@ cat lsfiles
  whoami > lsfiles
 cat lsfiles
 ls >> lsfiles ---> Append means add
+Env Variables ---> env
+ alias
