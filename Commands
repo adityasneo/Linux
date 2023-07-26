@@ -33,3 +33,16 @@ Env Variables ---> env
  alias
 grep -R linuxteam /etc
 grep -R linuxteam /etc 2> /dev/null
+cat /etc/os-release
+ cd home
+   10  ls -lrt
+   11  useradd example
+   12  ls
+   13  ls -lrt
+   14  cd /usr
+   15  ls
+   16  cd /var
+   17  ls -lrt
+   18  cd log
+   19  ls
+   20  less messages
