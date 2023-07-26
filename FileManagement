@@ -15,4 +15,4 @@ cp --help
   298  touch ad{0..10}
   299  ls
   300  cp ad* adi/
-cp sub/sub1 ---> copy directory
+cp -r sub/sub1 . ---> copy directory
