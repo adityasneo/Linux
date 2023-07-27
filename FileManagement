@@ -25,15 +25,15 @@ which ---> binary $Path
 locate -->updatedb -- db
 find -->
 which userad
-  307  which useradd
-  308  echo $PATH
-  309  vi hello
-  310  chmod +x hello
-  311  hello
-  312  ./hello
-  313  which hello
-  314  clear
-  315  history
+    which useradd
+   echo $PATH
+  vi hello
+  chmod +x hello
+  hello
+  ./hello
+ which hello
+ clear
+ history
 locate useradd
 updatedb
 locate useradd
@@ -45,5 +45,11 @@ find / user linuxteam
 find /etc -exec grep -l linuxteam {}  \; 2> /dev/null
 grep -l linuxteam /etc/* 2>/dev/null
 
-Mounting 
+Mounting the device
+To access a  device that should be connected to a directory
+Multiple Mounts: /var /boot .......
+
 Tar
+Tape Archiever -- not comparison the data
+ myarchievtar dest home source
+tar -cvf myarchievtar /home/* /etc/*
