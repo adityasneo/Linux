@@ -55,3 +55,34 @@ Tape Archiever -- not comparison the data
 tar -cvf myarchievtar /home/* /etc/*
 tar -tvf
 tar -xvf ---extrats the data in current dir can use -C will paste to other directory
+Compression solution
+gzip
+bzip
+zip
+xz
+ls
+  522  ls -lrt
+  523  mv myarchive.tar myarchive
+  524  ls -lrt
+  525  file myarchive
+  526  tar -xvf myarchive
+  527  clear
+  528  gzip --help
+  529  gzip myarchive
+  530  ls
+  531  gzip myarchive
+  532  ls -lrt
+  533  gunzip myarchive
+  534  clear
+  535  gzip -k myarchive
+  536  bzip2 --help
+ xz --help
+
+---------
+Links
+Hard  links ---> 
+In /root/links/testlink test2link
+ls -li
+symbolic links ---> In -s file1 file2
+ls -li --- to check inodes
+inodes ----> oraganised
