@@ -41,7 +41,7 @@ find / -name "hosts"
 find / -type f -size +100M
 find / -type f -size +100M 2> /dev/null --> to ignore error
 find / var -type f -size +100M
-find / user linuxteam
+find / user linuxteam 
 find /etc -exec grep -l linuxteam {}  \; 2> /dev/null
 grep -l linuxteam /etc/* 2>/dev/null
 
@@ -53,3 +53,5 @@ Tar
 Tape Archiever -- not comparison the data
  myarchievtar dest home source
 tar -cvf myarchievtar /home/* /etc/*
+tar -tvf
+tar -xvf ---extrats the data in current dir can use -C will paste to other directory
