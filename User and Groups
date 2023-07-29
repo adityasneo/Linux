@@ -42,3 +42,55 @@ lid to check the users
 password properties ---- /etc/login.defs
 PAM --- plugable authentication modules --- details about file
 chage
+ useradd india
+   94  visudo
+   95  clear
+   96  id
+   97  ssh localhost
+   98  clear
+   99  exit
+  100  ls
+  101  history
+  102  clear
+  103  vi /etc/passwd
+  104  useradd --help | less
+  105  useradd -c "this user is devops"
+  106  vi /etc/passwd
+  107  useradd -c "this user is devops" dev
+  108  vi /etc/passwd
+  109  useradd -D
+  110  usermod --help | less
+  111  visudo
+  112  usermod -aG wheel newusera
+  113  id newusera
+  114  userdel India
+  115  userdel -rf India
+  116  cd /home
+  117  ll
+  118  passwd
+  119  clear
+  120  passwd --help
+  121  useradd newuser1
+  122  passwd -l newuser1
+  123  cd ..
+  124  history
+  125  clear
+  126  useradd -D
+  127  cat /etc/default/useradd
+  128  vi /etc/login.defs
+  129  cd newuser
+  130  ll
+  131  ls -la
+  132  vi /etc/skel
+  133  cat /etc/skel
+  134  clear
+  135  cat /etc/shadow
+  136  cat /etc/group | grep -i wheel
+  137  lid -g wheel
+  138  usermode -aG wheel newuser3
+  139  lid -g wheel
+  140  chsage
+  141  chage
+  142  chage newuser
+  143  grep newuser
+  144  grep newuser /etc/shadow
