@@ -33,3 +33,12 @@ vi /etc/passwd
 useradd -D
 /etc/login.defs
 /etc/default/useradd
+/etc/skel
+/etc/shadow ---- password properties
+/etc/passwd ---- user properties
+groupadd
+groupdel
+lid to check the users
+password properties ---- /etc/login.defs
+PAM --- plugable authentication modules --- details about file
+chage
