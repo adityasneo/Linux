@@ -9,3 +9,27 @@ gecos -- when we give command can see here
 create and managing
 useradd - c "this is aditya" -- adding user
 useradd - D Defaults
+userdel -rf  ----   -rf remove user in home directory also
+vi /etc/passwd
+  104  useradd --help | less
+  105  useradd -c "this user is devops"
+  106  vi /etc/passwd
+  107  useradd -c "this user is devops" dev
+  108  vi /etc/passwd
+  109  useradd -D
+  110  usermod --help | less
+  111  visudo
+  112  usermod -aG wheel newusera
+  113  id newusera
+  114  userdel India
+  115  userdel -rf India
+  116  cd /home
+  117  ll
+  118  passwd
+  119  clear
+  120  passwd --help
+  121  useradd newuser1
+  122  passwd -l newuser1
+useradd -D
+/etc/login.defs
+/etc/default/useradd
