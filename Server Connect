@@ -7,4 +7,12 @@ network
 userspaces
 
 chvt --- change virtual terminal
-
+su open shell as other user and root user
+su --root
+su ----- partical user
+su -   --- target user complete user
+sudo -- can run the tasks as other user
+ sudoers
+ sudoers.d
+add user in wheel for access
+visudo
