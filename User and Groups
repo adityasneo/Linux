@@ -1,0 +1,11 @@
+User account basic security and system accounts
+user properties -- /etc/passwd
+bob:x:1000:1000:GECOS: /home/bob:/bin/bash
+bob -- name
+x ----password
+1000 ---uid unique identifier
+1000 ---gid group id primary
+gecos -- when we give command can see here
+create and managing
+useradd - c "this is aditya" -- adding user
+useradd - D Defaults
