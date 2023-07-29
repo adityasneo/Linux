@@ -16,3 +16,20 @@ sudo -- can run the tasks as other user
  sudoers.d
 add user in wheel for access
 visudo
+useradd India
+password
+exit
+logout
+su -India
+id
+sudo useradd lella
+sudo password
+ grep sudo*
+   87  grep wheel
+   88  clear
+usermode -aG wheel india
+su -india
+
+
+
+
