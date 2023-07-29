@@ -15,6 +15,6 @@ Connect to server
 Useradd in visudo
 ![image](https://github.com/adityasneo/Linux/assets/128022129/0cb43688-7cf2-4617-84df-4ddfe5bcb1ff)
 
+
 ssh
 ![image](https://github.com/adityasneo/Linux/assets/128022129/bd644733-3f5f-4608-ac28-9f65a238e173)
-
