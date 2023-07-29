@@ -70,3 +70,26 @@ grep 'b.t' regrx
 grep 'b.*t' regex
 grep 'bo*t' regex
 grep 'b.?t' regex
+awk ---- text process data extraction and reporting
+sed -- scripting streamline editor search matching text changes updates
+ vi regex
+   59  grep 'b.?t' regex
+   60  grep 'bo*t' regex
+   61  egrep 'b.?t' regex
+   62  egrep 'bo?t' regex
+   63  vi regex
+   64  egrep 'bi*t' regex
+   65  clear
+   66  awk -F : '/aditya/ {print $4}' /etc/passwd
+   67  ls -l /etc/ | awk '/pass/ {print}'
+   68  ls -l /etc/ | grep pass
+   69  vi setfile
+   70  cat setfile
+   71  sed -n 3p sedfile
+   72  sed -n 3p setfile
+   73  sed -i s/three/THREE/g setfile
+   74  sed -n 3p sedfile
+   75  sed -n 3p setfile
+   76  sed -i -e '3d' setfile
+   77  sed -n 3p setfile
+   78  cat setfile
