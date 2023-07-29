@@ -11,4 +11,6 @@ chvt
 ![image](https://github.com/adityasneo/Linux/assets/128022129/3d70c2cd-bdb0-489a-b967-b145117ae708)
 Connect to server
 ![image](https://github.com/adityasneo/Linux/assets/128022129/25310594-3d00-4c10-8cab-be3b15a43f9f)
+Useradd in visudo
+![image](https://github.com/adityasneo/Linux/assets/128022129/0cb43688-7cf2-4617-84df-4ddfe5bcb1ff)
 
