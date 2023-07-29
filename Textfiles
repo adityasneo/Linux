@@ -25,4 +25,48 @@ more
   585  cut -f 3 -d : /etc/passwd | grep -i 1003
   586  cut -f 3 -d : /etc/passwd | less
   587  cut -f 3 -d : /etc/passwd | sort | less
-  588  history
+  tail -f /var/log/messages
+   28  ls
+   29  cat /etc/hosts
+   30  cat -A /etc/hosts
+   31  cat -b /etc/hosts
+   32  cat -S space
+   33  catclearce
+   34  clear
+   35  cat -s space
+   36  man cat
+   37  tac space
+   38  tac -s space
+   39  cat /etc/password
+   40  ls
+   41  exit
+   42  ls
+   43  cd ..
+   44  ls
+   45  grep linuxteam
+   46  cat /etc/passwd
+   47  clear
+   48  grep aditya
+   49  grep aditya*
+   50  clear
+   51  grep -A5 linuxteam /etc/passwd
+sed
+awk
+grep(a*)a*
+(a*) ---regular expression
+a* --- global expression
+ grep -A5 linuxteam /etc/passwd
+grep linuxteam
+   46  cat /etc/passwd
+   47  clear
+   48  grep aditya
+   49  grep aditya*
+   50  clear
+   51  grep -A5 linuxteam /etc/passwd
+   52  history
+   53  clear
+   54  cat regex
+grep 'b.t' regrx
+grep 'b.*t' regex
+grep 'bo*t' regex
+grep 'b.?t' regex
