@@ -1,0 +1,10 @@
+Kernel Space
+  |
+modules,drivers
+  |
+network
+
+userspaces
+
+chvt --- change virtual terminal
+
