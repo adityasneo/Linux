@@ -1,0 +1,28 @@
+more
+  551  more hello
+  552  clear
+  553  exit
+  554  ls
+  555  more fileami
+  556  less fileami
+  557  clear
+  558  head -n 10 fileami
+  559  less -n 1
+  560  less -n 1 fileami
+  561  clear
+  562  ls
+  563  tail -n 1 fileami
+  564  clear
+  565  tail -f /var/log/messages
+  566  sudo su -
+  
+  574  history
+  575  cat /etc/password
+ 
+  582  cut -f 3 -d : /etc/passwd
+  583  cut -f 3 -d : /etc/passwd | less
+  584  cat /etc/passwd
+  585  cut -f 3 -d : /etc/passwd | grep -i 1003
+  586  cut -f 3 -d : /etc/passwd | less
+  587  cut -f 3 -d : /etc/passwd | sort | less
+  588  history
