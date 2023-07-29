@@ -29,7 +29,7 @@ sudo password
    88  clear
 usermode -aG wheel india
 su -india
-
+ssh --remote ./ssh/know.hosts  encrypted port 22
 
 
 
