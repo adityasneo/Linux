@@ -1,0 +1,4 @@
+Ip link show --- current devices
+ip addr show ----config
+lo device ---loop back devic
+BIOS -- real network devices
