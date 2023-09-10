@@ -1,1 +1,15 @@
+Piping the output of one command to another command, and redirecting the output of the second command to a file
 
+ls | grep myfile > filelist.txt
+ lists all the files and directories in the current directory, pipes the output to the grep command, which searches for the word 
+"myfile", and redirects the output of grep to the filelist.txt file
+
+Redirecting STDERR to STDOUT using pipes
+ls/nofile 2>&1 | grep "No such file"
+tries to list a file that does not exist, redirects the STDERR stream to the STDOUT stream using 2>&1, pipes the output to the 
+grep command, which searches for the phrase "No such file", and displays the results on the terminal
+
+Using pipes to concatenate two or more commands
+ls | sort | uniq
+lists all the files and directories in the current directory, pipes the output to the sort command, which sorts the list 
+alphabetically, and pipes the output to the uniq command, which removes any duplicates
