@@ -1,0 +1,6 @@
+cd: Changes the current working directory
+ echo: Displays a message on the terminal
+ exit: Exits the current shell session
+ alias: Creates or modifies a command alias
+ history: Displays a list of recently executed commands
+ export: Sets an environment variable
