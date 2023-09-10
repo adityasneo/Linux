@@ -1,1 +1,18 @@
+d reads the contents of the myfile.txt file and sorts them alphabetically using the sort command
+sort < myfile.txt
 
+lists all the files and directories in the current directory and redirects the output to the filelist.txt file
+ls > filelist.txt
+
+tries to list a file that does not exist and redirects any error messages to the error.log file
+ls/nofile 2> error.log
+
+redirects the output of the ls command to STDERR instead of STDOUT
+ls/nofile 1>&2
+
+lists all the files and directories in the current directory and pipes the output to the grep command, which searches for the word and lists all the files and directories in the current directory and pipes the output to the grep command, which searches for the word 
+"myfile" and displays the results on the terminal
+ls | grep myfile
+
+lists a file that does not exist and redirects both the STDOUT and STDERR streams to the output.log file
+ls/nofile &> output.log
