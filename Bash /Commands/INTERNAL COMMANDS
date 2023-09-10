@@ -4,3 +4,11 @@ cd: Changes the current working directory
  alias: Creates or modifies a command alias
  history: Displays a list of recently executed commands
  export: Sets an environment variable
+
+echo $SHELL
+echo $PATH
+myvar=blue
+echo $myvar
+echo ${myvar}1
+export mynewvar=red
+echo $mynewvar
