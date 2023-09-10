@@ -1,0 +1,32 @@
+Bash scripting, variables are used to store and manipulate data They can be assigned a value, which can be a string, number, or other data type, and then used 
+in various commands and operations. Here are some key points about using variables in Bash scripting, along with examples
+
+variable_name=value
+name="Jai“
+
+$ symbol followed by the variable name
+echo $name
+
+Variables in Bash scripting can be used in arithmetic operations using the $(( )) syntax
+a=5
+b=10
+sum=$((a+b))
+echo $sum
+
+Variables in Bash scripting can be passed as arguments to functions or scripts
+function display_name { 
+  echo "Name: $1"  
+}
+name="John"
+display_name $name 
+This will display "Name: John" on the terminal.
+
+Variables in Bash scripting can be manipulated using various string operations, such as concatenation, substring extraction, and pattern 
+matching
+greeting="Hello"
+name="John"
+echo "$greeting,$name!"
+
+variables are a powerful tool in Bash scripting, allowing you to store and manipulate data, pass arguments between functions and 
+scripts, and perform a wide range of operations using various string and arithmetic operations. By mastering the use of variables in Bash 
+scripting, you can create flexible and powerful scripts and automate many common tasks
