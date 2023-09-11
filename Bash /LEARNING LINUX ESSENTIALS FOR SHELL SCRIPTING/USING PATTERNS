@@ -1,0 +1,16 @@
+Globbing is for file patterns in Bash
+* matches zero or more characters
+?matches any single character
+[...]matches any of the characters listed
+extended globbing must enable with shopt +s extglob provides additional
+?(patterns):matches zero or more occurences of pattern
+*(patterns):matches zero or more occurences of pattern
++(patterns)matches zero or more more occurences of pattern
+@(patterns)matches one occurence of pattern
+shopt +s extglob
+touch .txt e.txt ee.txt eee.txt
+ls *.txt
+ls ?(e).txt
+ls *(e).txt
+ls +(e).txt
+ls @(e).txt
