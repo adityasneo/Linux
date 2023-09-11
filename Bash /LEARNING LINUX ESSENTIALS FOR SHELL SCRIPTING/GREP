@@ -1,0 +1,4 @@
+grep external command to filter text
+find files or filter command 
+grep "root"*
+ps aux | grep 'ssh'
