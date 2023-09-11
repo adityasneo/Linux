@@ -1,0 +1,31 @@
+After execution a command generates an exit code
+last exit code generated can be requested using echo $?
+if 0 the command was executed successfully
+if 1,there was a generic error
+shell scripts,this is done by using exit n in case an error condition occurs
+In Linux, exit codes are numerical values that are returned by a command or script when it completes execution. 
+These codes provide information about the success or failure of the command or script, and are used by other 
+programs and scripts to determine the appropriate action to take. Here are some key points about exit codes in 
+Linux:
+ Exit codes are typically defined as integers, with 0 representing success and non-zero values representing failure. 
+Different exit codes may be used to indicate different types of failure, such as syntax errors, missing files, or 
+permission issues.
+ Exit codes are returned by both internal commands (commands built into the shell) and external commands 
+(standalone programs that are executed by the shell).
+ Exit codes can be accessed using the $? variable, which contains the exit code of the most recently executed 
+command. For example, the following code runs the ls command and then displays its exit code:
+ls
+echo$?
+Exit codes can be used in shell scripts to perform different actions based on the success or failure of a command or script. For example, the 
+following code checks whether a file exists, and then performs different actions based on the result:
+if [-e myfile.txt]
+then
+  echo "File exists"
+else
+   echo "File does not exist"
+fi
+Different programs and scripts may define their own exit codes to provide more detailed information about the success or failure of their 
+specific operation.  Common exit codes in Linux include:  0: Success  1: General error  2: Misuse of shell builtins  126: Command cannot execute  127: Command not found  128: Invalid argument to exit  130: Command terminated by Ctrl-C
+Overall, exit codes provide a way to communicate the success or failure of a command or script to other programs and scripts in the Linux 
+environment. By understanding how exit codes work and how to use them in shell scripts, users can create more robust and reliable scripts that 
+can handle different types of errors and failures
