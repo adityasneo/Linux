@@ -1,0 +1,22 @@
+alias is a bash internal command that allows you to define your own commands
+to replace long commands 
+Best Practice: Do Not Use Shell Scripts as they are not might exist
+
+In Linux, an alias is a way to create a shortcut or abbreviation for a longer command or series of commands. It allows you to save time and
+simplify your workflow by typing a shorter command instead of a longer one. Here are some key points about working with aliases in Linux:
+
+In Linux, an alias is a way to create a shortcut or abbreviation for a longer command or series of commands. It allows you to save time and
+simplify your workflow by typing a shorter command instead of a longer one. Here are some key points about working with aliases in Linux:
+Aliases can be defined using the following syntax:
+ alias new_command='original_command'
+Aliases can be removed using the following syntax:
+ unalias new_command
+Aliases can be used with command-line arguments. For example, the following alias defines a shortcut for searching for a file using the find
+command:
+ alias findfile='find / -name'
+ With this alias, you can search for a file by typing findfile myfile.txt instead of the longer find / -name myfile.txt.
+Aliases can also be used to create more complex shortcuts that involve multiple commands. For example, the following alias defines a shortcut
+for cleaning up temporary files and directories:
+ alias clean='rm -rf /tmp/*; rm -rf ~/.cache/*'
+ With this alias, you can clean up temporary files and directories by typing clean instead of the longer rm -rf /tmp/*; rm -rf ~/.cache/*.
+
