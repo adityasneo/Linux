@@ -1,0 +1,16 @@
+printf print text on screen
+printf"%s\n" "hello world" --print a new line
+%s - format string 
+\n - newline formatting character
+\t common and to print tab stops
+format string applied to aall arguments used with printf
+compare
+printf"%s\n"hello world
+printf"%s\n""hello world"
+printf"%s\n""hello" ""world"
+%s -- identify arguments as strings
+%d -- identify arguments as integres
+%f -- identify arguments as floats
+printf"%f\n"255
+printf"%.1f\n"255
+for i in $(seq 1 10);do printf"%04d\t""$i";done
