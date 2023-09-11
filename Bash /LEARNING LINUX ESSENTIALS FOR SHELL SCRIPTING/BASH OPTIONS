@@ -1,0 +1,11 @@
+set -- make it standard behaviour from the terminal 
+set-x
+ls
+set+x
+after the shebang in a script to use it in a script only:#!/bin/bash-x
+
+shopt+s extglob --enables extended globbing patterns
+these allows to add features to shell ansd scripts
+shopt -s checkjobs
+sleep 3600&
+exit
