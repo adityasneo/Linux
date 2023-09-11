@@ -1,0 +1,6 @@
+echo used to print text on screen
+formatting use echo -e and put string between double quotes
+\b is backspace:echo -e "b\bc"
+\n is newline:echo -e "b\nc"
+\t is tab:echo -e "b\tc"
+echo hello
