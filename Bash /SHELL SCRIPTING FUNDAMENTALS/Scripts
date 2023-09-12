@@ -1,1 +1,16 @@
+vim myscriptfile
+below is script 
 
+#!/bin/bash
+#lab
+clear
+printf "%s\n" "hello world"
+
+vim myscriptfile
+chmod +X myscriptfile
+./myscriptfile
+echo $PATH
+cp myscriptfile /usr/local/bin
+ls -ld /usr/local/bin
+whoami
+sudo cp myscriptfile /usr/local/bin
