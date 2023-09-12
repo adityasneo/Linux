@@ -1,0 +1,38 @@
+head command is used to display the first few lines of a text file. The basic syntax is as follows:
+ head [options] [input_file]
+where [options] is a list of options that modify the behavior of the command (e.g., how many lines to display), and [input_file] is the name of the file to be
+displayed.
+For example, suppose we have a file called data.txt that contains the following data:
+ 1,John,Doe,42
+ 2,Jane,Smith,35
+ 3,Bob,Johnson,27
+ 4,Alice,Williams,51
+ 5,Michael,Davis,45
+To display the first three lines of the file, we can use the following command:
+ head -n 3 data.txt
+The output of the above command will be:
+ 1,John,Doe,42
+ 2,Jane,Smith,35
+ 3,Bob,Johnson,27
+
+tail command is used to display the last few lines of a text file. The basic syntax is as follows:
+ tail [options] [input_file]
+where [options] is a list of options that modify the behavior of the command (e.g., how many lines to display), and [input_file] is the name of the file to be displayed.
+For example, suppose we have a file called data.txt that contains the following data:
+ 1,John,Doe,42
+ 2,Jane,Smith,35
+ 3,Bob,Johnson,27
+ 4,Alice,Williams,51
+ 5,Michael,Davis,45
+To display the last three lines of the file, we can use the following command:
+ tail -n 3 data.txt
+The output of the above command will be:
+ 3,Bob,Johnson,27
+ 4,Alice,Williams,51
+ 5,Michael,Davis,45
+To continuously display the last few lines of a file as they are added to it (useful for monitoring log files), we can use the -f option:
+ tail -f [input_file]
+ where [input_file] is the name of the file to be monitored.
+
+
+
