@@ -1,0 +1,37 @@
+sed (short for stream editor) is a powerful text manipulation tool in Linux. It is used to perform basic text transformations on an input stream (a file or input from a pipeline).
+The basic syntax for using sed is as follows:
+ sed 's/pattern/replacement/g' [input_file]
+where s is a command that tells sed to substitute one pattern with another, pattern is the regular expression to be replaced, replacement is the text to replace the pattern with, and g stands for global and tells sed to replace all
+occurrences of the pattern in the line. [input_file] is the name of the file to be processed.
+For example, suppose we have a file called data.txt that contains the following data:
+ John,Doe,42
+ Jane,Smith,35
+ Bob,Johnson,27
+To replace all occurrences of the comma with a semicolon, we can use the following command:
+ sed 's/,/;/g' data.txt
+The output of the above command will be:
+ John;Doe;42
+ Jane;Smith;35
+ Bob;Johnson;27
+To replace the first occurrence of a pattern in each line, we can use the following command:
+ sed 's/,/;/' data.txt
+The output of the above command will be:
+ John;Doe,42
+ Jane;Smith,35
+ Bob;Johnson,27
+To delete a line from the file, we can use the following command:
+ sed '/Jane/d' data.txt
+The output of the above command will be:
+ John,Doe,42
+ Bob,Johnson,27
+In the above example, the d command tells sed to delete the line that contains the pattern Jane.
+To append a line after a specific line, we can use the following command:
+ sed '/Jane/a\
+ New line added' data.txt
+The output of the above command will be:
+ John,Doe,42
+ Jane,Smith,35
+ New line added
+ Bob,Johnson,27
+In the above example, the a command tells sed to append the text New line added after the line that contains the pattern Jane
+
