@@ -21,4 +21,51 @@ $RANDOM: a random number
 $SECONDS:number of seconds this shell has been running
 $LINENO:line in current script
 $HISTCMD:number of command in history
+$GROPS:an array holds names of groups that current user is a member of
+compare echo $GROUPS versus echo "${GROUPS[@]}"
+$DIRSTACK:list of recently visited directories also use dirs to display
+standard Variables $BASH_ENV,$BASHOPTS
 
+DEFINING VARIABLES WITH READ
+shell script execution will stop to read user input,when read is used
+
+echo enter a value
+read value
+echo you have entered $value
+if no variable name is set,read result is stored in $REPLY
+read also can used without further arguments
+echo press enter to continue
+read
+echo continuing ...
+read can used to define more than one variable at same time
+#!/bin/bash
+echo enter firstname, lastname and city
+read firstname lastname and city
+echo nice to meet you $firstname $lastname from city
+set shows all current variables,including functions and values of variables
+compgen -v will show variables only and not their values
+
+HANDLING SCRIPT ARGUMENTS
+script arguments can addressed individually
+address all arguments use $@ or $*
+without quotes,$@ and $* are identical
+with quotes,$@ exoands to properly quoted arguments and $* makes all arguments into a single argument
+
+SHIFT
+shift used to shift positional parameters to left
+shift can take a number
+shift useful to remove arguments after processing them
+alternative,looping all arguments using while
+
+SUBSTITUTION
+used to work with result of command instead of a static value that is provided
+today=$(date+%D-%m-%Y)
+mykernel=$(uname-r)
+two ways substitution
+today=$(date+%D-%m-%Y)
+today='date+%D-%m-%Y'
+
+HERE DOCUMENTS
+
+used as i/o redirection to feed a command list to an interactive program or command
+used as a scripted alternative can be provided by input redirection
