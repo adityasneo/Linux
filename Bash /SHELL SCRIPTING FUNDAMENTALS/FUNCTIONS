@@ -1,0 +1,21 @@
+function is a small block of resuable code that can be called from the script by referring to its name
+convenient code are needed repeatedly
+
+two ways defined
+function_name () {
+   commands
+}
+
+function function_name {
+   commands
+}
+
+set -- show list of all functions currently available
+remove a function by using unset
+
+functions can work with arguments
+#!/bin/bash
+hello(){
+  echo hello $1
+}
+hello bob
