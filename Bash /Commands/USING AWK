@@ -1,0 +1,36 @@
+awk is a powerful text processing tool in Linux. It is used to manipulate and analyze text files, especially when the data is organized in fields or columns. awk
+reads each line of a file, divides it into fields, and then performs actions based on the content of the fields.
+The basic syntax for using awk is as follows:
+ awk 'pattern {action}' [input_file]
+where pattern is a regular expression that defines the records to process, action is a series of commands to perform on the records that match the pattern,
+and [input_file] is the name of the file to be processed.
+For example, suppose we have a file called data.txt that contains the following data:
+ John,Doe,42
+ Jane,Smith,35
+ Bob,Johnson,27
+To print the first and last names (fields 1 and 2) from each line of the file, we can use the following command:
+ awk -F, '{print $1,$2}' data.txt
+The output of the above command will be:
+ John Doe
+ Jane Smith
+ Bob Johnson
+In the above example, the -F option specifies the field separator (a comma in this case), and the print command tells awk to print the first and second fields
+of each record.
+
+To perform arithmetic operations on the data, we can use the following command to compute the average age:
+ awk -F, '{sum+=$3} END {print "Average age:",sum/NR}' data.txt
+The output of the above command will be:
+ Average age: 34.6667
+In the above example, the sum+=$3 command adds the third field (age) to the variable sum for each record, and the END keyword tells awk to
+perform the following command after all records have been processed. The NR variable contains the total number of records, so sum/NR
+computes the average age.
+To filter the data based on a condition, we can use the following command to print the names of people who are older than 30:
+ awk -F, '$3 > 30 {print $1,$2}' data.txt
+The output of the above command will be:
+ John Doe
+ Jane Smith
+ Alice Williams
+ Michael Davis
+In the above example, the $3 > 30 condition tells awk to process only the records where the third field (age) is greater than 30, and the print
+command tells awk to print the first and second fields of each matching record.
+
