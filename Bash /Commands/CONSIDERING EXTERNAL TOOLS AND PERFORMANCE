@@ -1,0 +1,13 @@
+best practice: try to avoid using external tools
+type - to find out if tool is external or not
+to measure performance use time myscript to measure the amount of time it takes to run a script with or without external tools
+time ls
+which ls
+which time
+/usr/bin/time ls
+type time
+type cd
+time awk -F : '{ print $1 }' /etc/passwd
+time cut -d : -f 1/etc/passwd
+
+
