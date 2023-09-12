@@ -1,0 +1,5 @@
+An argument is anything that can be put behind the name of the command or script
+ls -l/etc has 2 arguments
+ls -l/etc, -l is used as an (option) an argument that changes the behaviour of command or script and its functionality is programmed into the command
+positional parameter --another argument
+variable -- key with a name that can refer to specific value
