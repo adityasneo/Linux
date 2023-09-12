@@ -1,0 +1,8 @@
+Escaping is soln to take away special meaning from characters
+to apply escape use quotes
+double quotes used to avoid interpretation of spaces
+echo "my value"
+single quotes used to avoid interpretation of anything
+echo the current '$SHELL' is $SHELL
+backslash used to avoid interpretation of next character
+echo the current \$SHELL is $SHELL
