@@ -1,0 +1,48 @@
+cut allows to filter out fields,based on a field separator:cut-d:-f1 /etc/passwd
+use awk for more advanced
+sort allows to sort items.it will happen based on the order of characters in the ASCII table
+sort -n for numeric sort
+sort-d for dictionary order
+consult the man page
+cut works based on Internal Field Separator(IFS) by default is a space
+
+cut command is used to extract specific columns from a text file. The basic syntax is as follows:
+ cut -f [fields] [input_file]
+where [fields] is a comma-separated list of field numbers or ranges to extract, and [input_file] is the name of the file from which to extract the fields.
+For example, suppose we have a file called data.txt that contains the following data:
+ 1,John,Doe,42
+ 2,Jane,Smith,35
+ 3,Bob,Johnson,27
+To extract the first and last name columns (columns 2 and 3), we can use the following command:
+ cut -f 2,3 -d ',' data.txt
+The -d option specifies the delimiter used in the input file (in this case, a comma).
+The output of the above command will be:
+ John,Doe
+ Jane,Smith
+ Bob,Johnson
+sort command is used to sort the contents of a text file. The basic syntax is as follows:
+ sort [options] [input_file]
+where [options] is a list of sorting options and [input_file] is the name of the file to be sorted.
+
+For example, suppose we have a file called names.txt that contains the following data:
+ John
+ Jane
+ Bob
+ Alice
+To sort the names in alphabetical order, we can use the following command:
+ sort names.txt
+The output of the above command will be:
+ Alice
+ Bob
+ Jane
+ John
+To sort the names in reverse alphabetical order, we can use the -r option:
+ sort -r names.txt
+The output of the above command will be:
+ John
+ Jane
+ Bob
+ Alice
+To sort the names in numerical order (if the file contains numbers), we can use the -n option:
+ sort -n numbers.txt
+
