@@ -1,0 +1,24 @@
+variable can contain a number,character or a string of characters
+declare can be used to set specific variable attributes
+declare -r ANSWER=yes sets $ANSWER as a read-only variable
+declare [-a|-A]MYARRAY to define an indexed or associative array
+declare may required to set an array not for variable
+declare -p find out which type of variable 
+compare declare -p GROUPS with declare -p PATH
+
+Defining a variable key=value
+Env Variables by default in UpperCase
+local variable can be any case
+to make variables available in subshell use export key=value
+clear variable contents use key=
+env -- access to env variable
+
+colour=blue
+echo "${colour}"
+
+SPECIAL VARIABLES
+$RANDOM: a random number
+$SECONDS:number of seconds this shell has been running
+$LINENO:line in current script
+$HISTCMD:number of command in history
+
