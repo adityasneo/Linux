@@ -1,0 +1,7 @@
+cat /etc/passwd
+awk -F : '$3 > 999 { print $0 }' /etc/passwd
+awk -F : '$3 > 999 { print $0 }' /etc/passwd | sort
+awk -F : '$3 > 999 { print $0 }' /etc/passwd | sort | sed 's/old/new/'
+echo $SHELL
+ls -l $(which sh) $(which bash)
+ls -l $(which dash) $(which bash)
