@@ -1,0 +1,69 @@
+scripting and other programming languages. Regular expressions use a set of characters and operators to define a pattern,
+which can then be used to match and manipulate text. Here are some key points about regular expressions:
+ Regular expressions are used to match patterns in text. The pattern is defined using a combination of characters and
+operators that specify the type of characters to match and how many times they should be matched.
+ Regular expressions can be used to search, replace, and manipulate text in Bash scripting and other programming
+languages. They are commonly used for tasks such as data validation, parsing, and text manipulation.
+ Regular expressions use special characters, such as the dot (.), asterisk (*), and plus sign (+), to match patterns of
+characters. These characters can be used to match specific characters, groups of characters, or a range of characters.
+ Regular expressions can also use character classes to match specific types of characters, such as digits, letters, or
+whitespace. Character classes are denoted by brackets ([]) and can be used to match a single character from a set of
+possible characters.
+ Regular expressions can be combined with other Bash features, such as variables, loops, and conditional statements, to
+create powerful text manipulation operations.
+ Regular expressions can be tested and debugged using online tools and command-line utilities, such as grep and sed,
+which provide functionality for searching, replacing, and manipulating text using regular expressions.
+Overall, regular expressions are a powerful tool for manipulating and searching text in Bash scripting and other programming
+languages. By mastering the use of regular expressions, users can create more efficient and flexible text manipulation
+operations that can handle a wide range of text processing needs.
+
+UNDERSTANDING REGULAR EXPRESSIONS
+ Regular Expressions are text patterns that are used by tools like grep and others
+ Always put your regex between single quotes!
+ Don't confuse regular expressions with globbing (shell wildcards)!
+ They look like file globbing, but they are not the same
+ Grep ‘a*’ a*
+ For use with specific tools only (grep, vim, awk, sed)
+ See man 7 regex for details
+ Basic regular expressions work with most tools
+ Extended regular expressions don't always work. Use grep -E if it is an extended regular expression
+ Some scripting languages (like perl) come with their own regular expressions
+
+Hello, this is a file.txt file.
+It contains some text that can be searched and manipulated using regular
+expressions. 1234 is an example of a number that can be matched using regular
+expressions. The string "foo" can be replaced with the string "bar" using regular
+expressions
+
+Matching a specific string: The following regular expression matches the string "hello" in a text file.
+ grep "hello" file.txt
+Matching a pattern of characters: The following regular expression matches any sequence of digits in a text file.
+ grep "[0-9]+" file.txt
+Matching a range of characters: The following regular expression matches any sequence of lowercase letters in a text file.
+ grep "[a-z]+" file.txt
+Matching multiple patterns: The following regular expression matches any line that contains either "hello" or "world" in a text file.
+ grep "hello\|world" file.txt
+
+Using regular expressions in a script: The following script prompts the user to enter a string and then checks whether the string
+matches a specific regular expression pattern
+
+echo "Enter a string"
+read input
+
+if [[ $input=~ ^[0-9]+$ ]]; then
+   echo "Input is a number"
+else
+   echo "Input is not a number"
+fi
+Replacing text using regular expressions: The following command replaces all occurrences of the string "foo" with the string
+"bar" in a text file.
+ sed 's/foo/bar/g' file.txt
+
+^ beginning of the line:grep '^|' myfile
+$ end of the line:grep'anna$' myfile
+\b end of word:grep'^lea\b' myfile will find lines starting with lea,but not with leanne
+*zero or more times:grep 'n.*x'myfile
++one or more times(extended regex!):grep -E'bi+t'myfile
+?zero or one time(extended regex!):grep -E'bi?t'myfile
+n\{3\}n occurs 3 times:grep'bon\{3\}nen'myfile
+.one character:grep'^.$'myfile
