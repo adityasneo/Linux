@@ -6,3 +6,10 @@ integer tests- compare integers which include operations like bigger than smaale
 file tests- test all kind of properties of files
 test used in conditional statements
 test condition can written as [condition]
+
+USING LOGICAL TESTS
+logical tests are if then else written diff way
+Logical AND:structure is a&&b b is executed when a is successful
+Logical OR: structure is a||b b executed only if a is not successful
+Logical operators can be embedded in if statements to test multiple conditions
+if [-d$!]&&[-x$1]; echo $ is a directory and has execute;fi
