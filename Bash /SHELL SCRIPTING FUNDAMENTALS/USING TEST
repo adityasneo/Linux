@@ -13,3 +13,15 @@ Logical AND:structure is a&&b b is executed when a is successful
 Logical OR: structure is a||b b executed only if a is not successful
 Logical operators can be embedded in if statements to test multiple conditions
 if [-d$!]&&[-x$1]; echo $ is a directory and has execute;fi
+if[-f/etc/hosts]
+then
+ echo file exists
+fi
+[-f/etc/hosts]&&file exists
+
+
+TESTING WITH [ [] ]
+regular test  can written as [condition]
+enhanced version written as [[condition]]
+[[condition]] bash internal offers features not offered by test
+[[$VAR!=yes]]
