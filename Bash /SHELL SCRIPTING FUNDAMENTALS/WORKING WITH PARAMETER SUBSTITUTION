@@ -1,0 +1,12 @@
+PARAMETER SUBSTITUTION used to deal with missing parameters
+
+if parameter is not set use default (Does NOT set it)
+echo${usermae:-$(whoami)} uses result of whoami if $username is not set
+filename=${1:-$DEFAULT_FILENAME} uses value of $DEFAULT_FILENAME if $filename is not set
+
+if parameter is not set, set to default
+echo${usermae:-$(whoami)} uses result of whoami if $username is not set
+
+if parameter is not set,print error_msg and exit script with exit status 1
+echo ${myvar"?error_msg}
+
