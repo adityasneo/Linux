@@ -1,0 +1,8 @@
+test is foundation of many if statements
+test performs as 
+Expression tests-evaluate the binary outcome of an expression which is a logical test by itself
+string tests-evaluate if a string is present or absent and compare one string to another
+integer tests- compare integers which include operations like bigger than smaaler than
+file tests- test all kind of properties of files
+test used in conditional statements
+test condition can written as [condition]
