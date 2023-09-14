@@ -18,3 +18,14 @@ echo$a
 expr external command can be used in scripts
  $((...)) allows you to put calculations between parenthesis
  $((2*3))
+
+
+ADVANCED CALCULATION TOOLS
+
+bc is an advanced calculation tool allows to work with decimals
+bc used in pipes: echo "12/5" | bc
+to print decimals in result use -l: echo "12/5" | bc -l
+bc access to built-in mathematical functions echo "sqrt(1000)" | bc -l
+factor decomposes an integer into prime factors factor 399
+
+
