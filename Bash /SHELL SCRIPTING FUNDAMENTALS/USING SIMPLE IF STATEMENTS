@@ -1,0 +1,8 @@
+if used to verify that a condition is true
+if true
+then
+     echo command executed successfully
+fi
+
+condition is a command returned an exit code 0 or a test that completed successfully
+if[-f/etc/hosts];then echo file exists;fi
