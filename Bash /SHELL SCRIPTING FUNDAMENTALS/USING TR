@@ -1,0 +1,8 @@
+tr is an external utility allows for translation of characters
+echo hello | tr[a-z] [A-Z]
+echo hello | tr[:lower:] [:upper:]
+echo hello | tr[a-m] [n-z]
+echo how are you | tr[:space:] '\t'
+bash variables can modify case using ^^(uppercase) and ,,(lowercase)
+colour=red;echo ${color^^}
+color=BLUE;echo ${color,,}
