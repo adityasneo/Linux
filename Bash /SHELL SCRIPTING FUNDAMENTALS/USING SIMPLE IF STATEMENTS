@@ -6,3 +6,32 @@ fi
 
 condition is a command returned an exit code 0 or a test that completed successfully
 if[-f/etc/hosts];then echo file exists;fi
+
+USING IF…THEN…ELSE
+else can used as an extension to if statement to perform an action if first condition is not true
+instead of else independent statements can be used in some cases
+
+USING IF…THEN…ELSE WITH ELIF
+
+elif added to if ...then ...else statement to add a second condition
+
+if[-d$1];then
+     echo $1 is a directory
+elif[-f$1];then
+     echo $1 is a file
+else
+     echo $1 is an unknow entity
+fi
+
+
+CONDITIONALS AND LOOPS
+if ...then ...else used to execute commands if a specific condition is true
+ if [-z$!];then echo hello;fi
+for used to execute a command on a range of items
+for i in "$@";do echo $i;done
+while used to run command as long as a condition is true
+while true;do true;done
+until used to run command as long as a condition is not true
+until who | grep $!;do echo $1 is not logged in;done
+case used to run command if a specific situation is true
+
