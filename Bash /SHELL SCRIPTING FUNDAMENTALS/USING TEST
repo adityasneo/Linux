@@ -24,4 +24,7 @@ TESTING WITH [ [] ]
 regular test  can written as [condition]
 enhanced version written as [[condition]]
 [[condition]] bash internal offers features not offered by test
-[[$VAR!=yes]]
+[[$VAR1=yes&&VAR@=red]] using a conditional statement within the test
+[[1<2]] tests if 1 is smaller than 2
+[[-e$B]] will test is $b exists.if $b is a file that contains spaces,using [[]] won't reqiure to use quotes
+[[$var=img*&&($var=*.png || $var=*.jpg)]]&&echo$var starts with img and ends with .jpg or .png
