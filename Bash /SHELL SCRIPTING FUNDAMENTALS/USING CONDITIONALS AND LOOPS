@@ -1,0 +1,43 @@
+if ...then ...els used to execute commands if a specific condition is true
+if[-z $1];then echo hello;fi
+
+for used to execute a command on a range of items
+for i in "$@";do echo $i;done
+
+while used to run a command as long as a condition is true
+while true;do true;done
+
+until used to run a command as long as condition is not true
+until who | grep $1;do echo $1 is not logged in;done
+
+case used to run a command if a specific situation is true
+
+FOR
+iterate over range of items,useful for handling a range of arguments, or a series of files
+
+CASE
+used to check a specific number of cases
+to provide scripts that work with certain specific arguments
+case is case sensitive,consider using tr to convert all to a specific case
+
+USING WHILE AND UNTIL
+while and until used to run a command based on exit status of an expression
+while will run the command as long as expression is true
+until will run the command as long as expression is not true
+
+
+USING BREAK AND CONTINUE
+
+break used to leave a loop straight away
+useful if an exceptional situation arises
+
+continue used to stop running through this iteration and begin the next iteration
+if a situation was encountered that makes it impossible to proceed
+
+
+
+
+
+
+
+
