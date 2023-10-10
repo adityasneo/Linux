@@ -1,0 +1,7 @@
+OPTIONS
+ an argument that changes script behaviour
+use while getopts "ab:" opts to evaluate options a and b, and while evaluting them,put them in a temporary variable opts
+use case $opts to define what should happen if a specific option was encountered
+
+FUNCTIONS
+ local - define variables with a local scope inside of a function
